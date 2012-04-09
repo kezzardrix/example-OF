@@ -96,7 +96,7 @@ class metaController{
             ofPoint ufoCenter;
             for(vector<myPCon>::iterator conIt = perfume[i].begin(); conIt != perfume[i].end(); ++conIt){
                 conIt->update();
-                conIt->c.set(bvh.getJoint(k).getPosition());
+                conIt->c.set(bvh.getJoint(k)->getPosition());
                 
                 if(k == 0) ufoCenter = conIt->c;
                 
